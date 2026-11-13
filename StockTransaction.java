@@ -46,4 +46,4 @@ public class StockTransaction{
     return String.format("#%-4d %-10s %-8s qty:%-5d %s",
         sequenceNumber, type, productId, quantity, timeStamp);
 }
-}
+} 
