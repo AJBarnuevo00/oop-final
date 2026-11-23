@@ -3,7 +3,8 @@ import java.time.format.DateTimeFormatter;
 
 public class StockTransaction{
     private final int sequenceNumber, quantity;
-    private final String type, productId, timeStamp;
+    private final String type;//ADD, UPDATE, DELETE, STOCK_IN, STOCK_OUT
+    private String productId, timeStamp;
 
     public StockTransaction(int sequenceNumber, String type, String productId, int quantity){
         if (sequenceNumber <= 0)
